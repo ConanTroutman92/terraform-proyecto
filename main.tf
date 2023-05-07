@@ -1,6 +1,19 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "=3.0.0"
+    }
+  }
+}
+
 # Define el proveedor de Azure
 provider "azurerm" {
   features {}
+  #subscription_id = ""
+  #client_id       = ""
+  #client_secret   = var.azure_password
+  #tenant_id       = ""
 }
 
 # Crea un grupo de recursos
